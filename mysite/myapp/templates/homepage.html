@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/homepage.css">
+    <!-- <script src="/static/javascript/ImageAddInfo.js"></script> -->
+
+
+    <!-- <link rel="stylesheet" href="/static/css/profile.css"> -->
+    <style>
+        body{
+          background-size: cover;
+          /* background-color: white; */
+          background-image: url("/static/image/laptop11.jpg");
+          
+        }
+        body::after {
+                content: "";
+                display: block;
+                 position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                backdrop-filter: blur(10px); /* Apply blur effect to backdrop */
+                z-index: -1;
+            }
+</style> 
+</head>
+
+
+<body>
+   
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    
+                </div>
+                <a href="https://www.facebook.com">
+                    <i class="fab fa-facebook social-icon"></i>
+                </a>
+                <a href="https://www.youtube.com">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.twiter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.Google.com">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.paypal.com">
+                    <i class="fab fa-paypal"></i>
+                </a>
+                <div class="container">
+                            <a href="#">
+                                <i id="showModalBtn" class="fa fa-fw fa-house-user" ></i>
+                            </a>
+                            <a href="#">
+                                <i id="openModalBtn" class="fa fa-fw fa-user-circle" ></i>
+                            </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+
+                <!-- {% if encoded_image %}
+                    <img src="data:image/jpeg;base64,{{ encoded_image }}" alt="Image">
+                {% else %}
+                    <p>No image found</p>
+                {% endif %} -->
+                <form id="uploadForm" enctype="multipart/form-data">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type="file" id="imageUpload" name="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                    <div class="avatar-preview">
+                
+                       <div id="imagePreview" style="background-image: url(/static/image/h1.jpg);"></div>
+   
+                    </div>
+                </div>
+            </form>
+
+              
+                <h3> 
+                    <a href="#" id="modalLink" style="color: red;">Hernanie D Galigao Jr.</a>
+                </h3>
+                <p>Designer/Programmer</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">My Dashboard</span>
+                    </a>
+
+                      
+                </li>
+
+                <li>
+                    <a href="#People">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">People</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Perfomance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">Development</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">Admin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">Settings</span>
+                    </a> 
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="container0">
+                    <img src="/static/image/Logo.ico">
+                    <h1>Lead Solutions Inc.</h1>
+                        <p>Im currently working as a Programmer since febraury 01, 2022.</p>
+                    <a href="//www.leadsolutionsinc.net">
+                    <button type="button"  >About Us</button>
+                     </a>
+            </div>
+            <div class="container" >
+                <div class="col">
+                    <div class="work work1">
+                     
+                      <a href="https://www.facebook.com/130998guia">
+                        <div class="see-more-wrapper">
+                          <div class="see-more-content">
+                        
+                          </div>
+                          <div class="see-more-link">
+                            <a href="https://www.facebook.com/130998guia">
+                                <i class="fab fa-facebook">   Visit GES..</i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                <div class="col">
+                    <div class="work work2">
+                    
+                      <a href="http://isulancampus.sksu.edu.ph/">
+                        <div class="see-more-wrapper">
+                          <div class="see-more-content">
+                       
+                          </div>
+                          <div class="see-more-link">
+                            <a href="http://isulancampus.sksu.edu.ph/">
+                                <i class="fab fa-google">   Visit SKSU Isulan Campus..</i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                <div class="col">
+                    <div class="work work3">
+                      <!-- <h5>Sultan Kudarat State University</h5> -->
+                      <a href="https://www.facebook.com/npnhsespsk?_rdc=1&_rdr">
+                        <div class="see-more-wrapper">
+                          <div class="see-more-content">
+                            <!-- Content goes here -->
+                          </div>
+                          <div class="see-more-link">
+                            <a href="https://www.facebook.com/npnhsespsk?_rdc=1&_rdr">
+                                <i class="fab fa-facebook">   Visit NPNHS..</i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="work work4">
+                    
+                      <a href="https://microfinancecouncil.org/taytay-sa-kauswagan-inc-tski/">
+                        <div class="see-more-wrapper">
+                          <div class="see-more-content">
+                    
+                          </div>
+                          <div class="see-more-link">
+                            <a href="https://microfinancecouncil.org/taytay-sa-kauswagan-inc-tski/">
+                                <i class="fab fa-google">   Visit TSKI..</i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+  
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+         hamburger.addEventListener("click", function()
+         {
+         document.querySelector("body").classList.toggle("active");
+         })
+   </script>
+       
+    <!-- <script src="/static/javascript/homepage_settings.js"></script> -->
+
+</body>
+</html>
